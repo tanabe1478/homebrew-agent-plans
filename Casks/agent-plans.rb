@@ -11,6 +11,12 @@ cask "agent-plans" do
 
   app "agent-plans.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/agent-plans.app"],
+                   sudo: false
+  end
+
   caveats <<~EOS
     This build is currently unsigned.
     If macOS blocks first launch, open the app via right-click -> Open,
