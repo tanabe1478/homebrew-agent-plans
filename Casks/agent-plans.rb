@@ -1,6 +1,6 @@
 cask "agent-plans" do
-  version "0.2.2"
-  sha256 "e5295912f4b86ee44b2fbb98f7bff88fdd54607dd08f11c00732fbacc2715689"
+  version "0.2.3"
+  sha256 "cd7d6fc9de9e9f1115e4116983fe61d854177dc2d1a671430e46d56860e73642"
 
   url "https://github.com/tanabe1478/agent-plans/releases/download/v#{version}/agent-plans-#{version}-mac-arm64.dmg"
   name "agent-plans"
